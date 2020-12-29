@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML><!DOCTYPE HTML>
 <!--
 	Testing Git
 	html5up.net | @ajlkn
@@ -71,26 +71,38 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="”mailto:hello@hello@rachelhowardrd.com”">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+								<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-handler.php">
+
+						        <div class="fcf-form-group">
+						            <label for="Name" class="fcf-label">Your name</label>
+						            <div class="fcf-input-group">
+						                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+						            </div>
+						        </div>
+
+						        <div class="fcf-form-group">
+						            <label for="Email" class="fcf-label">Your email address</label>
+						            <div class="fcf-input-group">
+						                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+						            </div>
+						        </div>
+
+						        <div class="fcf-form-group">
+						            <label for="Message" class="fcf-label">Your message</label>
+						            <div class="fcf-input-group">
+						                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+						            </div>
+						        </div>
+
+						        <div class="fcf-form-group">
+						            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+						        </div>
+
+						        <div class="fcf-credit" id="fcf-credit">
+						        Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+						        </div>
+
+						    </form>
 								<ul class="icons">
 
 									<li><a href="https://www.instagram.com/rachelhoward_rd/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
@@ -361,3 +373,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
